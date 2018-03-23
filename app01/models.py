@@ -12,6 +12,8 @@ class Department(models.Model):
         return self.name
 
 
+
+
 class Employee(models.Model):
     # employee's name
     name = models.CharField(max_length=20)
