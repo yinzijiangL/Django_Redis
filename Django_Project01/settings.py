@@ -119,4 +119,3 @@ STATIC_URL = '/abc/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 
-
