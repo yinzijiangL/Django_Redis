@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JsonResponse案例显示</title>
+    <script src="/static/js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+            $("#get_jsons").click(function () {
+                $.get("/do_json",function (data) {
+                    $("#add_employee").empty()
+                        .append("<li>name:" + data.name + "</li>")
+                        .append("<li>age:" + data.age + "</li>")
+                        .append("<li>sex:" + data.sex + "</li>")
+                        .append("<li>salary:" + data.salary + "</li>")
+                })
+
+        })
+
+        })
+
+
+
+    </script>
+
+</head>
+<body>
+
+<h3>JsonResponse案例显示</h3>
+
+<input type="button" value="获取Json数据" id="get_jsons">
+
+<ul id="add_employee"></ul>
+
+</body>
+</html>
